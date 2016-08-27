@@ -5,7 +5,6 @@ var bodyParser = require('body-parser');
 
 var app = express();
 
-// view engine setup
 ////引入arttemplate模板
 var template = require('art-template');
 template.config('base', '');

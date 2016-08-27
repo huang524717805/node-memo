@@ -24,9 +24,6 @@ define(['jquery','backbone','text!tplAllFolder','template','noteFolder','alert']
         // 参数一是模型，参数二是 option{wait：true}     等待服务器端返回数据后跟新集合
           that.collection.create(new Model.model({name:dirName,count:0}),{wait: true})
           that.listenToOnce(that.collection,'sync',function(model){
-            // console.dir(that.collection)
-            // that.collection.models.sort({id:false})
-            // that.render()
             location.href = "";
           })
       }, function () {

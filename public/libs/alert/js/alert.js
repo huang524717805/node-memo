@@ -160,11 +160,6 @@ define([],function(){
       title.innerText = this.title
       box.appendChild(title)
 
-      // var msg = document.createElement('div')
-      // msg.className = 'modal-message'
-      // msg.innerText = this.msg
-      // box.appendChild(msg)
-
       var input = document.createElement('input')
       input.className = 'modal-input'
       input.placeholder = '请输入您的内容'
@@ -186,15 +181,3 @@ define([],function(){
 
 
 
-// var c = new Confirm('提示框', '确定删除?',
-//     function (res) {
-//         // console.log('ok');
-//         (new Alert('提示框', '点了确定')).show();
-//     }, function (res) {
-//         // console.log('cancel');
-//         (new Alert('提示框', '点了取消')).show();
-//     })
-// var c = new Alert('提示框','这是一个提示内容',function(){
-//     alert('执行回调函数');
-// })
-//c.show();

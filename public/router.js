@@ -13,14 +13,11 @@ define(['backbone', 'folderController', 'noteListController', 'noteDetailControl
                 ///////index 路由执行的时候
                 folderController.init();
 
-                // console.log('index');
             },
             folder: function (id) {
-                // console.log(`edit ${id}`);
                 noteListController.init(id)
             },
             note: function (fid,id) {
-                // console.log('new');
                 // fid表示目录(note_folder)id,id表示文件id
                 noteDetailController.init(fid,id);
             }
